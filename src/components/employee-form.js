@@ -68,28 +68,7 @@ export default class EmployeeForm extends Component {
 
         // console.log(res.data)
         );
-    // console.log(this.props.data+1);
-  // componentWillRecieveProps(props){
-  //    this.props.update(this.props.dataValue+1);
-
-  // }
-    // window.location = '/create';
-    // alert('An employee was submitted: ' + this.state.name);
-
   }
-  // componentDidMount(){
-  //   console.log("hii");
-  // }
-  //   this.props.update(this.props.dataValue+1);
-  
-  
-// }
- // componentDidUpdate(prevProps) {
- //    const { employee: { name: { name } } } = this.props
- //    if (prevProps.employee.name.value !== this.state.name){
- //      console.log("hii");
- //    }
- //  } 
 
   render() {
     return (

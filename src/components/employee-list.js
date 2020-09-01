@@ -19,56 +19,29 @@ export default class EmployeeList extends Component {
         // console.log(res);
         const data = res.data;
         this.setState({ employees: data });
-        console.log('Data has been received!!');
+        // console.log('Data has been received!!');
       })
       .catch((err) => {
         alert('Error retrieving data!!!');
-        console.log(err.response);
+        // console.log(err.response);
 
       });
   }
   componentDidUpdate(prevProps) {
-    console.log('componentDidUpdate');
+    // console.log('componentDidUpdate');
   if(prevProps.data !== this.props.data) {
-    console.log('componentDidUpdate invoking');
     this.setState({data: this.props.data});
     
     return(this.getEmployees());
     // this.render();
   }
 }
-  // componentWillReceiveProps(nextProps){
-  //   console.log(this.props.data);
-  //   console.log(nextProps.data);
-  //   if(this.props.data!== nextProps.data){
-  //   this.getEmployees();
-  //   this.render();}
-  // }
-  // shouldComponentUpdate(nextProps) {
-  //   console.log('shouldComponentUpdate called');
-  //   if(this.props.data === 0 && nextProps.data === 0){
-  //     // this.getEmployees();
-  //     console.log('shouldComponentUpdate called first time');
-  //     console.log(this.props.data);
-  //     console.log(nextProps.data);
-  //     return true;
-  //   }
-    
-  //   // console.log(nextProps.passVal);
-  //   if(this.props.data !== nextProps.data){
-  //     console.log('shouldComponentUpdate called when changed');
-  //     console.log("changed");
-  //     this.getEmployees();
-  //     return true;
-  //   }
-  //   return false;
-  // }
 
   displayEmployees = (employees) => {
 
 
     if (!employees.length) return null;
-    console.log(employees);
+    // console.log(employees);
 
     return employees.map((employee, index) => (
       <div key={index}>
@@ -86,7 +59,6 @@ export default class EmployeeList extends Component {
   };
 
   render(){
-    // this.getEmployees();
   return(
     <div id = "rightbox" key="this.props.data">
         <h3>EmployeeList</h3>
