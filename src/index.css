@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.box-field,
+.newsbox {
+  width: 45%;
+  background-color: lightgrey;
+  font-family: arial;
+  margin-left: 30px;
+  height: 80%;
+  padding: 5px 10px 10px 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+#leftbox { 
+                float:left;  
+                /*background:Red; */
+                width:60%; 
+                /*height:280px; */
+            } 
+#rightbox{ 
+                float:right; 
+                /*background:blue; */
+                width:30%; 
+                /*height:280px; */
+            } 
+#empTable {
+  /*font-faempTablemily: "Trebuchet MS", Arial, Helvetica, sans-serif;*/
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#empTable td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: left;
+  min-width:100px
+  /*width: 20%;*/
+}
+
+#empTable tr,th {
+  border: 1px solid black;
+  padding: 8px;
+  width:50px
+  /*width: 20%;*/
+}
+#empTables td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: left;
+  min-width:100px
+  /*width: 20%;*/
+}
+
+#empTables tr,th {
+  border: 1px solid black;
+  padding: 8px;
+  width:100px
+  /*width: 20%;*/
+}
